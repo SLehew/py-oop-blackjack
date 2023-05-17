@@ -184,15 +184,15 @@ while not new_game.player.blackjack and not new_game.dealer.blackjack and not ne
 else:
     if new_game.dealer.blackjack == True:
         print('Blackjack -- Dealer Wins')
-    if new_game.player.blackjack == True:
+    elif new_game.player.blackjack == True:
         print(f'Blackjack -- {new_game.player.name} Wins!!')
-    if new_game.player.blackjack and new_game.dealer.blackjack == True:
+    elif new_game.player.blackjack and new_game.dealer.blackjack == True:
         print('You Both Have Blackjack Tie Game')
-    if new_game.player.busted == True:
+    elif new_game.player.busted == True:
         print('Busted -- Dealer Wins!')
-    if new_game.dealer.busted == True:
+    elif new_game.dealer.busted == True:
         print(f'Dealer Busted -- {new_game.player.name} Wins!!')
-    if new_game.player.busted and new_game.dealer.busted == True:
+    elif new_game.player.busted and new_game.dealer.busted == True:
         print('You Both Busted')
     elif new_game.player.staying == True:
         if new_game.dealer_score > new_game.player_score:
